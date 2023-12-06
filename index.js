@@ -7,6 +7,7 @@ const fileUpload = require('express-fileupload');
 const path = require('path');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+// import { createConnection } from 'mysql2';
 
 //Asignacion de variable al framework express
 const app = express();
@@ -28,6 +29,7 @@ const db = mysql.createConnection({
 	user: "root",
 	database: "railway",
 	password: "DdHed43HC63ecggdeEAF3GG5bb2HEb1-",
+	port: 47200,
 });
 
 
