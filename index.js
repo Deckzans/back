@@ -14,12 +14,20 @@ const app = express();
 //Asignacion de puerto en expresss
 const port = process.env.PORT || 5000;
 
-//Conexion a base de datos
+//Conexion a base de datos local
+// const db = mysql.createConnection({
+// 	host: "localhost",
+// 	user: "root",
+// 	database: "audioapp",
+// 	password: "",
+// });
+
+//Conexion a base de datos remota
 const db = mysql.createConnection({
-	host: "localhost",
+	host: "roundhouse.proxy.rlwy.net",
 	user: "root",
-	database: "audioapp",
-	password: "",
+	database: "railway",
+	password: "DdHed43HC63ecggdeEAF3GG5bb2HEb1-",
 });
 
 
