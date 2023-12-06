@@ -24,12 +24,12 @@ const port = process.env.PORT || 5000;
 // });
 
 //Conexion a base de datos remota
-const db = mysql.createConnection({
+const db = mysql.createPool({
 	host: "roundhouse.proxy.rlwy.net",
 	user: "root",
 	database: "railway",
 	password: "DdHed43HC63ecggdeEAF3GG5bb2HEb1-",
-	port: 47200,
+	port: "47200",
 });
 
 
