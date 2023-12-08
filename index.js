@@ -27,7 +27,7 @@ const port =   process.env.PORT || 5000;
 const db = mysql.createPool({
 	host: 'monorail.proxy.rlwy.net',
 	user: 'root',
-	password: '2a6fGAa-EEdcbb3A35C5H3ChCBh-g5d-',
+	password: '3-e336HF232gG5Bh1d2DFgdG2FgFF1BF',
 	database: 'railway',
 	port:33998
   });
