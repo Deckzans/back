@@ -13,7 +13,7 @@ const jwt = require('jsonwebtoken');
 const app = express();
 
 //Asignacion de puerto en expresss
-const port =  52216;
+const port =   process.env.PORT || 5000;
 
 //Conexion a base de datos local
 // const db = mysql.createConnection({
