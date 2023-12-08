@@ -13,24 +13,38 @@ const jwt = require('jsonwebtoken');
 const app = express();
 
 //Asignacion de puerto en expresss
-const port = process.env.PORT || 5000;
+const port =  52216;
 
 //Conexion a base de datos local
 // const db = mysql.createConnection({
 // 	host: "localhost",
 // 	user: "root",
-// 	database: "audioapp",
+// 	database: "audioapp2",
 // 	password: "",
 // });
 
-//Conexion a base de datos remota
+// Conexion remota ssql
 const db = mysql.createPool({
-	host: "roundhouse.proxy.rlwy.net",
-	user: "root",
-	database: "railway",
-	password: "DdHed43HC63ecggdeEAF3GG5bb2HEb1-",
-	port: 47200,
-});
+	host: 'roundhouse.proxy.rlwy.net',
+	user: 'root',
+	password: 'Hce-dEhahd-f3fgA-35che44HFAD55a3',
+	database: 'railway',
+	port:52216
+  });
+
+  db.getConnection((error, connection) => {
+	if (error) {
+	  console.error('Error al obtener una conexión del pool:', error);
+	} else {
+	  console.log('Conexión exitosa a la base de datos');
+  
+	  // Realiza operaciones en la base de datos aquí
+  
+	  // Libera la conexión de vuelta al pool
+	  connection.release();
+	}
+  });
+
 
 
 //Uso de Middelwares en App
