@@ -25,11 +25,11 @@ const port =   process.env.PORT || 5000;
 
 // Conexion remota ssql
 const db = mysql.createPool({
-	host: 'monorail.proxy.rlwy.net',
-	user: 'root',
-	password: '3-e336HF232gG5Bh1d2DFgdG2FgFF1BF',
-	database: 'railway',
-	port:33998
+	host: 'b5gmuts6yw2cxpx7tyvs-mysql.services.clever-cloud.com',
+	user: 'ualpvp3ictbqtvu2',
+	password: '8031zoezQFmNNutgoWqh',
+	database: 'b5gmuts6yw2cxpx7tyvs',
+	port:3306
   });
 
   db.getConnection((error, connection) => {
